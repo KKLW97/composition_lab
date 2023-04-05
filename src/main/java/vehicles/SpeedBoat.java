@@ -2,7 +2,7 @@ package vehicles;
 
 import products.IProduct;
 
-public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised{
+public class SpeedBoat extends Vehicle implements IWaterVehicle{
     private String hullType;
     private IMotorised motor;
 
@@ -20,14 +20,6 @@ public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised{
     @Override
     public void setHullType(String hullType) {
         this.hullType = hullType;
-    }
-
-    public IMotorised getMotor() {
-        return motor;
-    }
-
-    public void setMotor(IMotorised motor) {
-        this.motor = motor;
     }
 
     @Override
@@ -50,13 +42,4 @@ public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised{
         this.motor.setHp(hp);
     }
 
-    @Override
-    public int getFuel() {
-        return this.motor.getFuel();
-    }
-
-    @Override
-    public void setFuel(int fuel) {
-        this.motor.setFuel(fuel);
-    }
 }

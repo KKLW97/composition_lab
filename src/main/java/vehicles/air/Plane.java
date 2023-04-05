@@ -4,7 +4,7 @@ import products.IProduct;
 import vehicles.IMotorised;
 import vehicles.Vehicle;
 
-public class Plane extends Vehicle implements IAirVehicle, IMotorised {
+public class Plane extends Vehicle implements IAirVehicle {
     public int numberOfEngines;
     public int wingSpan;
     public int thrust;
@@ -32,14 +32,6 @@ public class Plane extends Vehicle implements IAirVehicle, IMotorised {
 
     public void setWingSpan(int wingSpan) {
         this.wingSpan = wingSpan;
-    }
-
-    public IMotorised getAircraftEngine() {
-        return aircraftEngine;
-    }
-
-    public void setAircraftEngine(IMotorised aircraftEngine) {
-        this.aircraftEngine = aircraftEngine;
     }
 
     @Override

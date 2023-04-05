@@ -83,5 +83,15 @@ public abstract class Vehicle implements IVehicle{
     }
 
 
+    public abstract void startEngine();
 
+    public abstract void stopEngine();
+
+    public abstract int getHp();
+
+    public abstract void setHp(int hp);
+
+    public abstract int getFuel();
+
+    public abstract void setFuel(int fuel);
 }
