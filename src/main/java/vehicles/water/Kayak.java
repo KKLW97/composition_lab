@@ -1,14 +1,16 @@
-package vehicles;
+package vehicles.water;
 
 import products.IProduct;
+import vehicles.Vehicle;
+import vehicles.water.IWaterVehicle;
 
-public class Kayak extends Vehicle implements IWaterVehicle{
+public class Kayak extends Vehicle implements IWaterVehicle {
 
     private String hullType;
 
-    public Kayak(float weight, int maxSpeed, IProduct baseProduct, String hullType){
+    public Kayak(float weight, int maxSpeed, IProduct baseProduct){
         super(weight, maxSpeed, baseProduct);
-        this.hullType = hullType;
+        this.hullType = "wood";
     }
 
     @Override

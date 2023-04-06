@@ -1,9 +1,8 @@
 import products.IProduct;
 import products.Product;
-import vehicles.Bicycle;
-import vehicles.Car;
+import vehicles.land.Bicycle;
+import vehicles.land.Car;
 import vehicles.Engine;
-import vehicles.Vehicle;
 
 import java.util.ArrayList;
 

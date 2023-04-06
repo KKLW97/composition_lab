@@ -37,7 +37,7 @@ public class Motor implements IMotorised{
 
     @Override
     public void stopEngine() {
-        System.out.println("Engine eStopped");
+        System.out.println("Engine stopped");
     }
 
 }

@@ -4,7 +4,7 @@ import products.IProduct;
 import vehicles.IMotorised;
 import vehicles.Vehicle;
 
-public class Helicopter extends Vehicle implements IAirVehicle {
+public class Helicopter extends Vehicle implements IAirVehicle, IMotorised {
     private int numberOfBlades;
     private int bladeSpan;
     private IMotorised aircraftEngine;

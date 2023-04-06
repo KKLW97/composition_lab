@@ -4,7 +4,7 @@ import products.IProduct;
 import vehicles.IMotorised;
 import vehicles.Vehicle;
 
-public class Plane extends Vehicle implements IAirVehicle {
+public class Plane extends Vehicle implements IAirVehicle, IMotorised {
     public int numberOfEngines;
     public int wingSpan;
     public int thrust;

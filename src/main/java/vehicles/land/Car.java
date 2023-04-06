@@ -1,6 +1,8 @@
-package vehicles;
+package vehicles.land;
 
 import products.IProduct;
+import vehicles.IMotorised;
+import vehicles.Vehicle;
 
 public class Car extends Vehicle implements ILandVehicle, IMotorised {
 

@@ -1,14 +1,17 @@
-package vehicles;
+package vehicles.water;
 
 import products.IProduct;
+import vehicles.IMotorised;
+import vehicles.Vehicle;
+import vehicles.water.IWaterVehicle;
 
-public class SpeedBoat extends Vehicle implements IWaterVehicle{
+public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised {
     private String hullType;
     private IMotorised motor;
 
-    public SpeedBoat(float weight, int maxSpeed, IProduct baseProduct, String hullType, IMotorised motor){
+    public SpeedBoat(float weight, int maxSpeed, IProduct baseProduct, IMotorised motor){
         super(weight, maxSpeed, baseProduct);
-        this.hullType = hullType;
+        this.hullType = "fibreglass";
         this.motor = motor;
     }
 
@@ -40,6 +43,16 @@ public class SpeedBoat extends Vehicle implements IWaterVehicle{
     @Override
     public void setHp(int hp) {
         this.motor.setHp(hp);
+    }
+
+    @Override
+    public int getFuel() {
+        return this.motor.getFuel();
+    }
+
+    @Override
+    public void setFuel(int fuel) {
+        this.motor.setFuel(fuel);
     }
 
 }

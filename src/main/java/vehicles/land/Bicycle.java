@@ -1,8 +1,9 @@
-package vehicles;
+package vehicles.land;
 
 import products.IProduct;
+import vehicles.Vehicle;
 
-public class Bicycle extends Vehicle implements ILandVehicle{
+public class Bicycle extends Vehicle implements ILandVehicle {
 
     private int wheelCount;
 
