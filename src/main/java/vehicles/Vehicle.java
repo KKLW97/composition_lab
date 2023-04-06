@@ -34,6 +34,14 @@ public abstract class Vehicle implements IVehicle{
         this.maxSpeed = maxSpeed;
     }
 
+    public IProduct getBaseProduct() {
+        return baseProduct;
+    }
+
+    public void setBaseProduct(IProduct baseProduct) {
+        this.baseProduct = baseProduct;
+    }
+
     @Override
     public float getPrice() {
         return this.baseProduct.getPrice();

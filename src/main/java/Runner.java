@@ -3,6 +3,7 @@ import products.Product;
 import vehicles.land.Bicycle;
 import vehicles.land.Car;
 import vehicles.Engine;
+import vehicles.water.Kayak;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,10 @@ public class Runner {
 
         vehicles.add(car);
 
-
+        Kayak kayak = new Kayak(30,20, new Product(400,8,"9t Sit On Kayak"));
+        vehicles.add(kayak);
+        kayak.setPrice(500);
+        System.out.println(vehicles);
     }
 
 }

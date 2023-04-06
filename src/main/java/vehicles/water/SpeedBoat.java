@@ -15,6 +15,14 @@ public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised {
         this.motor = motor;
     }
 
+    public IMotorised getMotor() {
+        return motor;
+    }
+
+    public void setMotor(IMotorised motor) {
+        this.motor = motor;
+    }
+
     @Override
     public String getHullType() {
         return hullType;
